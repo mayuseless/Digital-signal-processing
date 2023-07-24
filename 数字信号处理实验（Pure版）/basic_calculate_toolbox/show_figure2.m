@@ -1,0 +1,33 @@
+try
+    %原本Y1图像
+    subplot(2,2,1)
+    stem(X1,Y1,'fill')
+    title('x1(n)');
+    xlabel('n');
+    ylabel('x1(n)');
+    %原本Y2图像
+    subplot(2,2,2)
+    stem(X2,Y2,'fill')
+    title('x2(n)');
+    xlabel('n');
+    ylabel('x2(n)');
+    %现在图像
+    subplot(2,2,3)
+    stem(Xm,Ym,'fill')
+    title('新的图像');
+    xlabel('n');
+    ylabel('x(n)');
+catch
+    %原来图像
+    subplot(2,2,1)
+    stem(X,Y,'fill')
+    title('x(n)')
+    xlabel('n')
+    ylabel('x(n)')
+    %现在图像
+    subplot(2,2,2)
+    stem(Xm,Ym,'fill')
+    title('新的图像')
+    xlabel('n')
+    ylabel('x(n)')
+end
